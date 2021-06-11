@@ -1,7 +1,13 @@
-﻿namespace Entities.Concretes
+﻿using System;
+using Entities.Abstractions;
+
+namespace Entities.Concretes
 {
-    public class Internet
+    public class Internet: IObserver
     {
-        
+        public void Update()
+        {
+            Console.WriteLine("Internet updated.");
+        }
     }
 }
